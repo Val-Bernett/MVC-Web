@@ -1,4 +1,7 @@
 <?php
+
+define("BASE_URL", "http://localhost:3000/mvc_project/");
+
 session_start();
 require_once 'controller/usuarioController.php';
 

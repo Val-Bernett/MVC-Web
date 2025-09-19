@@ -4,7 +4,7 @@
 $editing = isset($usuario);
 ?>
 <h2><?php echo $editing ? 'Editar usuario' : 'Nuevo usuario'; ?></h2>
-<form method="POST" action="/mvc-app/index.php?action=<?php echo $editing ? 'edit' : 'create'; ?>">
+<form method="POST" action="<?= BASE_URL ?>index.php?action=<?= $editing ? 'edit' : 'create' ?>">
   <?php if ($editing): ?>
     <input type="hidden" name="id" value="<?php echo (int)$usuario['id']; ?>">
   <?php endif; ?>
@@ -13,9 +13,10 @@ $editing = isset($usuario);
   </label>
   <button type="submit"><?php echo $editing ? 'Actualizar' : 'Crear'; ?></button>
 </form>
-<a href="../../index.html" class="btn">Volver al inicio</a>
+<a href="index.html" class="btn">Volver al inicio</a>
   </div>
 </div>
+
 <style>
   .container {
     max-width: 600px;

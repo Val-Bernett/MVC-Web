@@ -19,7 +19,7 @@ class UsuarioController {
             UsuarioModel::crear($nombre);
             $_SESSION['mensaje'] = "Usuario registrado con éxito.";
         }
-        header("Location: index.php?action=index");
+        header("Location: " . BASE_URL . "index.php?action=index");
         exit;
     }
 
@@ -36,7 +36,7 @@ class UsuarioController {
             UsuarioModel::actualizar($id, $nombre);
             $_SESSION['mensaje'] = "Usuario actualizado.";
         }
-        header("Location: index.php?action=index");
+        header("Location: " . BASE_URL . "index.php?action=index");
         exit;
     }
 
@@ -46,7 +46,7 @@ class UsuarioController {
             UsuarioModel::eliminar($id);
             $_SESSION['mensaje'] = "Usuario eliminado.";
         }
-        header("Location: index.php?action=index");
+        header("Location: " . BASE_URL . "index.php?action=index");
         exit;
     }
 }

@@ -19,7 +19,7 @@
         </li>
       <?php endforeach; ?>
     </ul>
-    <a href="../../index.html" class="btn">Volver al inicio</a>
+    <a href="index.html" class="btn">Volver al inicio</a>
   </div>
 </div>
 

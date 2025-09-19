@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/mvc-app/model/conexion.php';
+require_once __DIR__ . '/model/conexion.php';
 if (session_status() === PHP_SESSION_NONE) session_start();
 
 $conexion = Conexion::conectar();
